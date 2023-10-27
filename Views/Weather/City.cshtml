@@ -1,0 +1,29 @@
+﻿@model MVC.Models.City
+
+@{
+    ViewData["Title"]="City";
+}
+
+<div class="container">
+    <div class ="container">
+        <div class="form-group col-md-9 col-md-6">
+            <h1>Погода для выбранного города</h1>
+            <label asp-for="Name"></label>
+            <span class="badge alert-primary">@Model.Name</span><br/>
+            <label asp-for="Temperature"></label>
+            <span class="badge alert-primary">@Model.Temperature</span><br />
+            <label asp-for="Humidity"></label>
+            <span class="badge alert-primary">@Model.Humidity</span><br />
+            <label asp-for="WindSpeed"></label>
+            <span class="badge alert-primary">@Model.WindSpeed</span><br />
+            <label asp-for="Pressure"></label>
+            <span class="badge alert-primary">@Model.Pressure</span><br />
+            <label asp-for="Weather"></label>
+            <span class="badge alert-primary">@Model.Weather</span><br />
+            <form method="get">
+                <button asp-controller="Weather" asp-action="CitySearch" class="btn-primary"> Go back</button>
+            </form>
+        </div>
+
+    </div>
+</divc>

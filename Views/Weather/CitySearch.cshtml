@@ -1,0 +1,20 @@
+﻿@model MVC.Models.CitySearch
+
+@{
+    ViewData["Title"] = "CitySearch";
+}
+
+<div class="container">
+    <form method="post">
+        <div class="container">
+            <h1>Поиск города по названию</h1>
+            <div>
+                <input asp-for="CityName" class="form-control" placeholder="Введите название города..." />
+                <button asp-controller="Weather" asp-action="CitySearch" class="bth btn-outline-primary">
+                    Поиск
+                </button>
+                <span asp-validation-for="CityName"></span>
+            </div>
+        </div>
+    </form>
+</div>
