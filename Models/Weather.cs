@@ -9,6 +9,10 @@ namespace MVC.Models
         public string Name { get; set; }
         [Display(Name ="Temperature:")]
         public float Temperature { get; set; }
+        [Display(Name = "Temperature min:")]
+        public float TemperatureMin { get; set; }
+        [Display(Name = "Temperature max:")]
+        public float TemperatureMax { get; set; }
         [Display(Name = "Humidity:")]
         public int Humidity { get; set; }
         [Display(Name = "Wind speed:")]

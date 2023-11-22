@@ -12,7 +12,7 @@ build_property.RootNamespace = MVC
 build_property.ProjectDir = C:\Uni\Proj3\MVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Uni\Proj3\MVC
 build_property._RazorSourceGeneratorDebug = 
 
@@ -22,6 +22,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Uni/Proj3/MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Uni/Proj3/MVC/Views/miniatures/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWluaWF0dXJlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Uni/Proj3/MVC/Views/miniatures/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWluaWF0dXJlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Uni/Proj3/MVC/Views/miniatures/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWluaWF0dXJlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Uni/Proj3/MVC/Views/miniatures/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWluaWF0dXJlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Uni/Proj3/MVC/Views/miniatures/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWluaWF0dXJlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Uni/Proj3/MVC/Views/Shared/Error.cshtml]

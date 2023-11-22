@@ -1,0 +1,55 @@
+﻿@model MVC.databaseClasses.miniature
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>miniature</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="databaseReady" /> @Html.DisplayNameFor(model => model.databaseReady)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Temp" class="control-label"></label>
+                <input asp-for="Temp" class="form-control" />
+                <span asp-validation-for="Temp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pressure" class="control-label"></label>
+                <input asp-for="Pressure" class="form-control" />
+                <span asp-validation-for="Pressure" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Humidity" class="control-label"></label>
+                <input asp-for="Humidity" class="form-control" />
+                <span asp-validation-for="Humidity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Temp_Min" class="control-label"></label>
+                <input asp-for="Temp_Min" class="form-control" />
+                <span asp-validation-for="Temp_Min" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Temp_Max" class="control-label"></label>
+                <input asp-for="Temp_Max" class="form-control" />
+                <span asp-validation-for="Temp_Max" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

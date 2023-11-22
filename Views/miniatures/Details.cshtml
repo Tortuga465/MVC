@@ -1,0 +1,54 @@
+﻿@model MVC.databaseClasses.miniature
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>miniature</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.databaseReady)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.databaseReady)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Temp)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Temp)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pressure)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pressure)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Humidity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Humidity)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Temp_Min)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Temp_Min)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Temp_Max)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Temp_Max)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

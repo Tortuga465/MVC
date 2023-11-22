@@ -1,7 +1,14 @@
+using MVC.databaseClasses;
 using MVC.Reps;
+using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IWForecastRepo, WForecastRepo>();    
+builder.Services.AddRazorPages();
+builder.Services.AddDbContext<applicationDbContext>(options => options.UseSqlite(
+    builder.Configuration.GetConnectionString("localDb")
+    ));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

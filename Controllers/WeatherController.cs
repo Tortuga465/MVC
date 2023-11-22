@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVC.databaseClasses;
 using MVC.Models;
 using MVC.OpenWeatherMap_Model;
 using MVC.Reps;
+
 
 namespace MVC.Controllers
 {
@@ -43,6 +45,8 @@ namespace MVC.Controllers
                 viewModel.Pressure = weatherResponse.Main.Pressure;
                 viewModel.Weather = weatherResponse.Weather[0].Main;
                 viewModel.WindSpeed = weatherResponse.Wind.Speed;
+                viewModel.TemperatureMin = weatherResponse.Main.Temp_Min-273;
+                viewModel.TemperatureMax = weatherResponse.Main.Temp_Max-273;
             }
             return View(viewModel); 
         }
