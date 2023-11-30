@@ -14,7 +14,7 @@ namespace MVC.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "6.0.9");
+            modelBuilder.HasAnnotation("ProductVersion", "7.0.8");
 
             modelBuilder.Entity("MVC.databaseClasses.miniature", b =>
                 {
@@ -31,10 +31,10 @@ namespace MVC.Migrations
                     b.Property<float>("Temp")
                         .HasColumnType("REAL");
 
-                    b.Property<float>("TempMax")
+                    b.Property<float>("Temp_Max")
                         .HasColumnType("REAL");
 
-                    b.Property<float>("TempMin")
+                    b.Property<float>("Temp_Min")
                         .HasColumnType("REAL");
 
                     b.Property<bool>("databaseReady")

@@ -55,7 +55,7 @@ namespace MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,databaseReady,Temp,Pressure,Humidity,TempMin,TempMax")] miniature miniature)
+        public async Task<IActionResult> Create([Bind("Id,databaseReady,Temp,Pressure,Humidity,Temp_Min,Temp_Max")] miniature miniature)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,databaseReady,Temp,Pressure,Humidity,TempMin,TempMax")] miniature miniature)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,databaseReady,Temp,Pressure,Humidity,Temp_Min,Temp_Max")] miniature miniature)
         {
             if (id != miniature.Id)
             {

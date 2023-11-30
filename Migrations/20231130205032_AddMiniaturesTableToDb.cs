@@ -4,8 +4,10 @@
 
 namespace MVC.Migrations
 {
-    public partial class AddMiniaturesTableToDB : Migration
+    /// <inheritdoc />
+    public partial class AddMiniaturesTableToDb : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -18,8 +20,8 @@ namespace MVC.Migrations
                     Temp = table.Column<float>(type: "REAL", nullable: false),
                     Pressure = table.Column<int>(type: "INTEGER", nullable: false),
                     Humidity = table.Column<int>(type: "INTEGER", nullable: false),
-                    TempMin = table.Column<float>(type: "REAL", nullable: false),
-                    TempMax = table.Column<float>(type: "REAL", nullable: false)
+                    Temp_Min = table.Column<float>(type: "INTEGER", nullable: false),
+                    Temp_Max = table.Column<float>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -27,6 +29,7 @@ namespace MVC.Migrations
                 });
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

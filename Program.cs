@@ -12,6 +12,7 @@ builder.Services.AddDbContext<applicationDbContext>(options => options.UseSqlite
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHostedService<BackgroundWorkerService>();
 
 var app = builder.Build();
 
